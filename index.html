@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Home Page</title> 
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with Instagram Logo and Menu -->
+    <img src="logo.png" alt="Instagram Logo">
+    <button id="menu-toggle">☰</button>
+
+    <header class="menu-bar">
+        <div class="logo">
+            <h1>Instagram</h1>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Notifications</a></li>
+                <li><a href="#">Messages</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Profile Section (Sidebar) -->
+        <aside class="profile-section">
+            <div class="profile-info">
+                <img src="profile-pic.jpg" alt="Profile Picture">
+                <h2>mixthiga_subbu</h2>
+                <p>Bio: ALL WORLD'S A STAGE.</p>
+            </div>
+            <div class="suggestions">
+                <h3>Suggestions for you</h3>
+                <ul>
+                    <li><a href="#">Swxthi05</a></li>
+                    <li><a href="#">pavi-radja16</a></li>
+                    <li><a href="#">srivarshinii01</a></li>
+                    <li><a href="#">freaky_girl</a></li>
+                    
+                </ul>
+            </div>
+            
+           <div id="menu-items" class="menu-items">
+            <ul>
+              <a href="#">Home</a>
+              <a href="#">About</a>
+              <a href="#">Services</a>
+              <a href="#">Contact</a>
+      </ul>
+    </div>
+          <button class="follow-btn">Follow</button>
+          <button class="follow-btn unfollow">Unfollow</button>
+        </aside>
+
+        <!-- Post Area -->
+        <section class="post-area">
+            <!-- Example Post -->
+            <div class="post">
+                <div class="post-header">
+                    <img src="user-pic.jpg" alt="User-Pic.jpg">
+                    <h4>mixthiga_subbu</h4>
+                </div>
+                <img src="post-image.jpg" alt="Post Image" class="post-image">
+                <div class="post-footer">
+                    <button class="like-button"❤️ Like</button>
+                    <span class="like-counter">like</span>
+                    <button class="comment-button">💬 Comment</button>
+                </div>
+                <div class="comment-section" style="display: none;">
+                    <input type="text" class="comment-input" placeholder="Add a comment...">
+                    <div class="comments-list">
+                     nice..
+                        <!-- Comments will be added here -->
+                    </div>
+                </div>
+            </div>
+            <!-- Add more posts as needed -->
+        </section>
+    </main>
+ <script src="script.js"></script>
+ <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            var menu = document.getElementById('menu-items');
+            if (menu.classList.contains('visible')) {
+                menu.classList.remove('visible');
+            } else {
+                menu.classList.add('visible');
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
